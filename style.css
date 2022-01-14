@@ -1,0 +1,89 @@
+body{
+    background-color: green;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+}
+.random-cards{
+    width: 100%;
+    height: 50px;
+    display: inline-flex;
+    padding: 10px 0;
+}
+.random-cards .cards{
+    width: 30px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    margin-left: 10px;
+}
+
+.random-cards .cards .number{
+    width: 100%;
+    text-align: center;
+}
+.random-cards .cards .number.spades::before{
+    content: "\2660";
+    color: black;
+    display: flex;
+    width: 100%;
+}
+.random-cards .cards .number.spades::after{
+    content: "\2660";
+    color: black;
+    display: flex;
+    width: 100%;
+    transform: rotate(180deg);
+}
+
+.random-cards .cards .number.clubs::before{
+    content: "\2663";
+    color: black;
+    display: flex;
+    width: 100%;
+}
+.random-cards .cards .number.clubs::after{
+    content: "\2663";
+    color: black;
+    display: flex;
+    width: 100%;
+    transform: rotate(180deg);
+}
+.random-cards .cards .number.hearts::before{
+    content: "\2665";
+    color: red;
+    display: flex;
+    width: 100%;
+}
+.random-cards .cards .number.hearts::after{
+    content: "\2665";
+    color: red;
+    display: flex;
+    width: 100%;
+    transform: rotate(180deg);
+}
+.random-cards .cards .number.diamonds::before{
+    content: "\2666";
+    color: red;
+    display: flex;
+    width: 100%;
+}
+.random-cards .cards .number.diamonds::after{
+    content: "\2666";
+    color: red;
+    display: flex;
+    width: 100%;
+    transform: rotate(180deg);
+}
+
+.step-sorting-cards{
+    display: flex;
+    flex-direction: column;
+}
